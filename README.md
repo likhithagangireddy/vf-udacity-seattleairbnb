@@ -23,7 +23,7 @@ The code should run with no issues using Python versions 3.7 and above.
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, I was interestested in using Seattle Airbnb data to better understand:
+For this project, I was mainly interested in using Seattle Airbnb data to better understand:
 
 1. Distribution of listing prices by neighbourhoods?
 2. How does the price of listings vary through out the year. This would help us understand what are the busy months for rentals in Seattle.
