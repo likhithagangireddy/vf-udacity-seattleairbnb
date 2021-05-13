@@ -38,7 +38,7 @@ There is one notebook available here to address the questions above.
 
 Please note that the notebook utilizes Plotly for a majority of the visualizations. Dependencies for doing so on your own local machine are mentioned above in the Installations section.
 
-The Plotly visualizations' output will not appear when viewing in Github. Alternatively you may wish to see the .html version of the notebook to see the visualizations.
+The Plotly visualizations' output will not appear when viewing in Github. Alternatively you may wish to see the .html version of the notebook to see the visualizations. Due to the sheer size of the file, you may not be able to view the raw file on Github.
 
 Most of the analysis is carried out using calendar.csv and  listings.csv files, which were downloaded from [Kaggle](https://www.kaggle.com/airbnb/seattle).
 
