@@ -25,7 +25,7 @@ The code should run with no issues using Python versions 3.7 and above.
 
 For this project, I was interestested in using Seattle Airbnb data to better understand:
 
-1. Q1. Distribution of listing prices by neighborhoods?
+1. Distribution of listing prices by neighbourhoods?
 2. How does the price of listings vary through out the year. This would help us understand what are the busy months for rentals in Seattle.
 3. How does availability vary through out the year? Are more listings available during busy months?
 4. What property attributes have a high influence on price
