@@ -44,7 +44,7 @@ Most of the analysis is carried out using calendar.csv and  listings.csv files, 
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here]().
+The main findings of the code can be found at the post available [here](https://lgreddy-sbn.medium.com/analysing-the-seattle-airbnb-datasets-4cef9b2f9dc1).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 Credit to Airbnb for providing the data. Licensing information can be found at the [Kaggle page](https://www.kaggle.com/airbnb/seattle) and the original source from [Airbnb Inside](http://insideairbnb.com/get-the-data.html).
