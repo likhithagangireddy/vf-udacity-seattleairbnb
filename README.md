@@ -14,31 +14,27 @@ This Repo contains python code to analyze the Seattle Airbnb Datasets
 
 This project utilizes default packages within the Anaconda distribution of Python for the majority of the analysis.
 
-However, you will need to install plotly if you haven't already done so before. See [Getting Started with Plotly for Python](https://plot.ly/python/getting-started/).
+However, you will need to install yellowbrick if you haven't already done so before. See [For More Information](https://pypi.org/project/yellowbrick/).
 
-In addition, if you would like to display the plotly visualizations within the jupyter notebook, then you will need to install the orca commandline utility and the psutil and requests Python libraries. See [Static Image Export in Python](https://plot.ly/python/static-image-export/).
-
-The code should run with no issues using Python versions 3.7 and above.
+The code is tested using Python versions 3.7.
 
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, I was mainly interested in using Seattle Airbnb data to better understand:
+For this project, We are mainly driven by the below questions for our analysis:
 
-1. Distribution of listing prices by neighbourhoods?
-2. How does the price of listings vary through out the year. This would help us understand what are the busy months for rentals in Seattle.
-3. How does availability vary through out the year? Are more listings available during busy months?
-4. What property attributes have a high influence on price
-5. How well can we predict listing price?
+Q1. How the availability of listings and price vary over the course of the year?
+Q2. Explore monthly price variation over the course of the year in greater depth
+Q3. Price Influencers
+Feature Selection Using Univariate Analysis
+Feature Selection Using Recursive Feature Elimination
+Q4. Build Two Linear Regression Models using the selected features and compare their performance.
 
 
 ## File Descriptions <a name="files"></a>
 
 There is one notebook available here to address the questions above.
 
-Please note that the notebook utilizes Plotly for a majority of the visualizations. Dependencies for doing so on your own local machine are mentioned above in the Installations section.
-
-The Plotly visualizations' output will not appear when viewing in Github. Alternatively you may wish to see the .html version of the notebook to see the visualizations. Due to the sheer size of the file, you may not be able to view the raw file on Github.
 
 Most of the analysis is carried out using calendar.csv and  listings.csv files, which were downloaded from [Kaggle](https://www.kaggle.com/airbnb/seattle).
 
