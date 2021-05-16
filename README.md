@@ -24,10 +24,13 @@ The code is tested using Python versions 3.7.
 For this project, We are mainly driven by the below questions for our analysis:
 
 Q1. How the availability of listings and price vary over the course of the year?
+
 Q2. Explore monthly price variation over the course of the year in greater depth
+
 Q3. Price Influencers
-Feature Selection Using Univariate Analysis
-Feature Selection Using Recursive Feature Elimination
+- Feature Selection Using Univariate Analysis
+- Feature Selection Using Recursive Feature Elimination
+
 Q4. Build Two Linear Regression Models using the selected features and compare their performance.
 
 
