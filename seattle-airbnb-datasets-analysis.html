@@ -22615,7 +22615,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[423]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[436]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">newdf</span>
@@ -22634,7 +22634,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[423]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[436]:</div>
 
 
 
@@ -23920,10 +23920,11 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[424]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[437]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_value&#39;</span><span class="p">,</span><span class="s1">&#39;accommodates&#39;</span><span class="p">,</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_location&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_accuracy&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span><span class="s1">&#39;host_listings_count&#39;</span><span class="p">,</span> <span class="s1">&#39;host_total_listings_count&#39;</span><span class="p">,</span> <span class="s1">&#39;accommodates&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;bathrooms&#39;</span><span class="p">,</span> <span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span> <span class="s1">&#39;review_scores_location&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -23934,7 +23935,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[425]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[438]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_list_cat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="p">,</span><span class="n">newdf</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;listing_id&#39;</span><span class="p">)</span>
@@ -23953,7 +23954,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[426]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[439]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Model Using RFE Features +  Categoriacal Variables</span>
@@ -23967,7 +23968,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[427]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[440]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_new</span><span class="o">=</span><span class="n">df_list_cat</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;listing_id&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -23982,7 +23983,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[428]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[441]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train_new</span><span class="p">,</span> <span class="n">X_test_new</span><span class="p">,</span> <span class="n">y_train_new</span><span class="p">,</span> <span class="n">y_test_new</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="o">.</span><span class="mi">40</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -24005,7 +24006,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[428]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[441]:</div>
 
 
 
@@ -24023,7 +24024,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[429]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[442]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Predict and score the model</span>
@@ -24050,8 +24051,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The r-squared score for your model on the training data was 0.5931955393347182 on 2290 values. The RMSE was 3201.4121572107842
-The r-squared score for your model on the test data was 0.5651962923347036 on 1528 values.  The RMSE was 3717.4343157412236
+<pre>The r-squared score for your model on the training data was 0.5915132372706118 on 2290 values. The RMSE was 3214.651299847823
+The r-squared score for your model on the test data was 0.5623204921919228 on 1528 values.  The RMSE was 3742.0214982962902
 </pre>
 </div>
 </div>
@@ -24063,7 +24064,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[430]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[443]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Model Using Univariate analysis Features +  Categoriacal Variables</span>
@@ -24077,7 +24078,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[431]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[444]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;listing_id&#39;</span><span class="p">,</span><span class="s1">&#39;bathrooms&#39;</span><span class="p">,</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span><span class="s1">&#39;beds&#39;</span><span class="p">,</span><span class="s1">&#39;guests_included&#39;</span><span class="p">,</span><span class="s1">&#39;accommodates&#39;</span><span class="p">,</span><span class="s1">&#39;reviews_per_month&#39;</span><span class="p">]</span>
@@ -24091,7 +24092,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[432]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[445]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_list_cat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="p">,</span><span class="n">newdf</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;listing_id&#39;</span><span class="p">)</span>
@@ -24105,7 +24106,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[433]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[446]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_new</span><span class="o">=</span><span class="n">df_list_cat</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;listing_id&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -24120,7 +24121,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[434]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[447]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train_new</span><span class="p">,</span> <span class="n">X_test_new</span><span class="p">,</span> <span class="n">y_train_new</span><span class="p">,</span> <span class="n">y_test_new</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="o">.</span><span class="mi">40</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -24143,7 +24144,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[434]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[447]:</div>
 
 
 
@@ -24166,7 +24167,7 @@ The r-squared score for your model on the test data was 0.5651962923347036 on 15
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[435]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[448]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Predict and score the model</span>
